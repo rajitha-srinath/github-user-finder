@@ -61,26 +61,26 @@ stars = Object.values(stars).slice(-5).reverse();
 forks = Object.values(forks).slice(-5).reverse();
 
 
-  const chartData = [
-    {
-      label: "JavaScript",
-      value: "290"
-    },
-    {
-      label: "CSS",
-      value: "260"
-    },
-    {
-      label: "HTML",
-      value: "180"
-    },
-  ];
+  // const chartData = [
+  //   {
+  //     label: "JavaScript",
+  //     value: "290"
+  //   },
+  //   {
+  //     label: "CSS",
+  //     value: "260"
+  //   },
+  //   {
+  //     label: "HTML",
+  //     value: "180"
+  //   },
+  // ];
 
   return (
     <section className="section">
       <Wrapper className="section-center">
         <Pie3D data={mostUsed} />
-        <Column3D data={chartData} />
+        <Column3D data={stars} />
         <Doughnut2D data={mostPopular} />
         <Bar3D data={forks} />
       </Wrapper>
